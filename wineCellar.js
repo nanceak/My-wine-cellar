@@ -12,7 +12,7 @@ var wineQuotes = [
     'Wine is the most healthful and most hygienic of beverages.<br>Louis Pasteur',
     'It takes a lot of good beer to make great wine.<br> Brian O\'Donnell, Winemaker of Belle Pente, 2013',
     'Champagne is appropriate for breakfast, lunch or dinner.<br>Madeline Puckette, 2010',
-    'Either give me more wine or leave me alone.<br>Rumi, circa 1200\'s',
+    'Either give me more wine or leave me alone.<br>Rumi, circa 1200s',
     'The discovery of a wine is of greater moment than the discovery of a constellation. The universe is too full of stars.<br>Benjamin Franklin, circa 1700s',
     'She gets to keep the chalet and the Rolls, I want the Montrachet.<br>Forbes Magazine, May 6, 1996',
     'My only regret in life is that I didn\'t drink enough Champagne.<br>Robert Noecker',
@@ -24,7 +24,19 @@ var wineQuotes = [
     'I am not sure I trust you.<br>You can trust me with your life, My King.<br>But not with my wine, obviously. Give it back.<br> Megan Whalen Turner, The King of Attolia',
     'I should say upfront that I have never been in a cellar in my life. In fact, I can see no reason why anyone should ever go into a cellar unless there is wine involved.<br>Rachel Hawkins, Hex Hall',
     'If reassurances could dull pain, nobody would ever go to the trouble of pressing grapes.<br>Scott Lynch, The Lies of Locke Lamora',
-    '[I]t is the wine that leads me on, the wild wine, that sets the wisest man to sing at the top of his lungs, laugh like a fool – it drives the man to dancing... it even tempts him to blurt out stories better never told.<br>Homer, The Odyssey'
+    '[I]t is the wine that leads me on, the wild wine, that sets the wisest man to sing at the top of his lungs, laugh like a fool \- it drives the man to dancing... it even tempts him to blurt out stories better never told.<br>Homer, The Odyssey',
+    'As I ate the oysters with their strong taste of the sea and their faint metallic taste that the cold white wine washed away, leaving only the sea taste and the succulent texture, and as I drank their cold liquid from each shell and washed it down with the crisp taste of the wine, I lost the empty feeling and began to be happy and to make plans.<br>Ernest Hemingway, A Moveable Feast',
+    'I pray you, do not fall in love with me, for I am falser than vows made in wine.<br>William Shakespeare, As You Like It',
+    'I love everything that is old; old friends, old times, old manners, old books, old wines.<br>Oliver Goldsmith, The Vicar of Wakefield',
+    'Age appears best in four things: old wood to burn, old wine to drink, old friends to trust and old authors to read.<br>Francis Bacon',
+    'Wine enters through the mouth, Love,the eyes.  I raise the glass to my mouth, I look at you, I sigh.<br>William Butler Yeats',
+    'There are thousands of wines that can take over our minds.  Don\'t think all ecstasies are the same!<br>Jalaluddin Rumi',
+    'Wine can of their wits the wise beguile, Make the sage frolic, and the serious smile.<br>Homer',
+    'Wine makes all things possible.<br>George R.R.Martin, The Mystery Knight',
+    'Wine makes every meal an occasion, every table more elegant, every day more civilized.<br>Andre Simon',
+    'A bottle of wine begs to be shared; I have never met a miserly wine lover.<br>Clifton Fadiman',
+    '\"Never cook with a wine you wouldn\'t drink,\" he said.  Though I guess that presupposes that there is a wine I wouldn\'t drink.<br>Lev Grossman, The Magicians',
+    'The first kiss and the first glass of wine are the best.<br>Marty Rubin'
 ]
 
 function displayQuote() {
