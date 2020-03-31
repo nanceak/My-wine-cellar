@@ -47,6 +47,6 @@ displayQuote();
 function addWines() {
     document.getElementById("addWineForm").style.display = "block";
 }
-function goBack() {
-    addWineForm.close();
+function closeWindow() {
+   document.getElementById("addWineForm").style.display = "none";
 }
