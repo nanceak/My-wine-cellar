@@ -44,3 +44,9 @@ function displayQuote() {
        document.getElementById("randomQuote").innerHTML = wineQuotes[quoteIndex];
 }
 displayQuote();
+function addWines() {
+    document.getElementById("addWineForm").style.display = "block";
+}
+function goBack() {
+    addWineForm.close();
+}

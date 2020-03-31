@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         
         <title>Wine cellar.htm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="C:/Users/Family/Documents/Javascript/Wine%20cellar/css/main.css">
         <p>
             <h1>
                 <b><i>My Wine Cellar</i></b><i>
@@ -14,17 +15,17 @@
         <style>
         h2 {
                 position: absolute;
-                left: 350px;
+                left: 50px;
                 top: 250px;
         }
         h3 {
                 position: absolute;
-                left: 350px;
+                left: 50px;
                 top: 300px;            
         }
         h4 {
                 position: absolute;
-                left: 350px;
+                left: 50px;
                 top: 350px;             
         }
         .button {
@@ -36,10 +37,86 @@
         
     </head>  
     <body>
-        
-        <script src="wineCellar.js"></script>
+                
+        <script src="C:/Users/Family/Documents/Javascript/Wine%20cellar/js/wineCellar.js"></script>
         <h2>
-            <button class="button" onclick="alert('I want to add some wines to the cellar')">I have some new wines to cellar</button>
+            <button class="button" onclick="addWines()">I have some new wines to cellar</button>
+            <div class="form-popup" id="addWineForm">
+                <form action="/addwine" method="post">
+                    <p>
+                        <label>   Add wine to the cellar</label><br><br>
+                    </p>
+                    <p>
+                        <label>   Date purchased/stored</label>
+                            <input type="text" name="date_stored" placeholder="Mmm-YY" size="6" required>
+                    </p>
+                    <p>
+                        <label>   Purchased from</label>
+                            <input type="text" name="purchased_from" size="40">
+                    </p>
+                    <p>
+                        <label>   Purchase price(per bottle)</label>
+                            <input type="Text" name="price" placeholder="$$$$" size="4">                       
+                    </p>
+                    <p>
+                        <label>   Producer</label>
+                        <input type="text" name="producer" size="40" required>
+                    </p>
+                    <p>
+                        <label>   Grape varieties</label>
+                        <label>  Grape #1</label>
+                        <input type="text" name="grape_1" size="10" required>
+                        <label>  Grape #2</label>
+                        <input type="text" name="grape_2" size="10">
+                        <label>  Grape #3</label>
+                        <input type="text" name="grape_3" size="10">
+                        <label>  Other grapes</label>
+                        <input type="text" name="other_grapes" size="20">
+                    </p>
+                    <p>
+                        <label>   Colour</label>                       
+                        <select>
+                            <option>Select one</option>
+                            <option>Red</option>
+                            <option>White</option>
+                        </select>
+                     
+                        <label>   Wine style</label>
+                        <select>
+                            <option>Select one</option>
+                            <option>Still</option>
+                            <option>Sparkling</option>
+                            <option>Fortified</option>
+                        </select>                        
+                    
+                        <label>   Vintage</label>
+                        <input type="text" name="Vintage" placeholder="YYYY" size="4" required>
+                    </p>
+                    <p>
+                        <label>   Grape region</label>
+                        <input type="text" name="grape_region" size="30">
+                        <label>   Country</label>
+                        <input type="text" name="country" size="20">
+                    </p>
+                    <p>
+                        <label>   Cellar up to</label>
+                        <input type="text" name="cellar_up_to" placeholder="YYYY" size="4">
+                    
+                        <label>   Storage location</label>
+                        <Input type="text" name="storage_location" size="10" required>
+                    </p>
+                    <p>
+                        <label>   Comments</label>
+                        <input type="text" name="comments" placeholder="Insert comments here" size="100">
+                    </p>
+                    /*  include a label image field later
+                    <p>
+                        <button type="button">Add wine</button>
+                        <button type="reset">Reset form</button>
+                        <button type="button" onclick="self.close()">Close</button>
+                    </p>
+                </form>
+            </div>
         </h2> 
         <h3>
             <button class="button" onclick="alert('I\'ve had a drink so I need to remove some wines from the cellar')">I have some wines to remove from the cellar</button>
