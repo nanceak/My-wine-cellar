@@ -36,7 +36,30 @@ var wineQuotes = [
     'Wine makes every meal an occasion, every table more elegant, every day more civilized.<br>Andre Simon',
     'A bottle of wine begs to be shared; I have never met a miserly wine lover.<br>Clifton Fadiman',
     '\"Never cook with a wine you wouldn\'t drink,\" he said.  Though I guess that presupposes that there is a wine I wouldn\'t drink.<br>Lev Grossman, The Magicians',
-    'The first kiss and the first glass of wine are the best.<br>Marty Rubin'
+    'The first kiss and the first glass of wine are the best.<br>Marty Rubin',
+    'I know I have a strong will because I have quit drinking wine a thousand times, and I will not stop but keep trying, bottle after bottle., TOSAYLIB.COM',
+    'Better is old wine than new, and old friends likewise.– Charles Kingsley',
+    'A glass of wine keeps the doctor away; a bottle of wine would keep everyone away. I think I’ll have a bottle.',
+    'Wine rejoices the heart of man and joy is the mother of all virtues.– Johann Wolfgang von Goethe',
+    'Making good wine is a skill. Fine wine is an art. – Robert Mondavi',
+    'Alcohol may be man’s worst enemy, but the bible says love your enemy. – Frank Sinatra',
+    'An empty bottle of wine is better than a filled one. It shows achievement.',
+    'I’ve stopped drinking, but only while I’m asleep. —George Best',
+    'In wine there is wisdom, in beer there is Freedom, in water there is bacteria. – Benjamin Franklin',
+    'I get really clumsy around wine, I seem to always spill the whole bottle down my throat.',
+    'The best part of having visitors is opening a bottle, serving them a glass and then getting to finish it myself.',
+    'When I read about the evils of drinking, I gave up reading. – Henny Youngman',
+    'My doctor said I could take wine only on joyous occasions, and my other doctor said I should always make every day joyous. So that settles it.',
+    'I know I’m drinking myself to a slow death, but then I’m in no hurry. – Robert Benchley',
+    'I drink to make other people more interesting. – Ernest Hemmingway',
+    'When you are stressed take wine, if you are still stressed take more wine.',
+    'I may be drunk, Miss, but in the morning I will be sober and you will still be ugly. – Winston Churchill',
+    'The discovery of a good wine is increasingly better for mankind than the discovery of a new star. – Leonardo Da Vinci',
+    'I am feeling really heroic today… I need to go rescue some wine trapped in their bottle.',
+    'A bottle of wine contains more philosophy than all the books in the world. – Louis Pasteur',
+    'Quickly, bring me a beaker of wine, so that I may wet my mind and say something clever. – Aristophanes',
+    'It’s really not my fault I drank wine all day. The bottles keep calling my name. They are attracted to me.',
+    'My most important rule in life : don’t drink wine when you are sleeping'
 ]
 
 function displayQuote() {
@@ -47,6 +70,14 @@ displayQuote();
 function addWines() {
     document.getElementById("addWineForm").style.display = "block";
 }
+function addToCellar() {
+    document.getElementById("addWineForm").submit;
+    var e = document.getElementsByTagName('input');
+    alert(e.length);
+    for (i = 0; i < e.length; i++) {
+        console.log(e[i].value);
+    }    
+}
 function closeWindow() {
-   document.getElementById("addWineForm").style.display = "none";
+    document.getElementById("addWineForm").style.display = "none";
 }

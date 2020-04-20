@@ -5,29 +5,35 @@
         
         <title>Wine cellar.htm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="C:/Users/Family/Documents/Javascript/Wine%20cellar/css/main.css">
         <p>
             <h1>
-                <b><i>My Wine Cellar</i></b><i>
+                <b style="font-size:80px; font-family:verdana; font-style: italic; color: green"><i>My Wine Cellar</i></b>
+
             </h1>
-            <p id="randomQuote"></p> 
+            <p id="randomQuote" style="font-size:20px; font-family: 'Monotype Corsiva'; color: lightgreen">
+            </p> 
         </p>
         <style>
         h2 {
                 position: absolute;
                 left: 50px;
                 top: 250px;
-        }
-        h3 {
+            }
+            h3 {
                 position: absolute;
                 left: 50px;
-                top: 300px;            
-        }
-        h4 {
+                top: 350px;
+                font-size: 40px;
+                font-family: verdana;
+            }
+            h4 {
                 position: absolute;
                 left: 50px;
-                top: 350px;             
-        }
+                top: 450px;
+                font-size: 40px;
+                font-family: verdana;
+            }
         .button {
             background-color: sandybrown;
             font-size: 24px;
@@ -38,91 +44,113 @@
     </head>  
     <body>
                 
-        <script src="wineCellar.js"></script>
+        <script src="C:/Users/Family/Documents/Javascript/Wine%20cellar/js/wineCellar.js"></script>
         <h2>
-            <button class="button" onclick="addWines()">I have some new wines to cellar</button>
-            <div class="form-popup" id="addWineForm">
+            <button class="button" onclick="addWines()" style="font-size:40px; font-family:verdana">I have some new wines to cellar</button>
+            <div class="form-popup" id="addWineForm" style="font-size:20px; font-family:verdana">
                 <form action="/addwine" method="post">
                     <p>
-                        <label>   Add WINE to the cellar</label><br><br>
+                        <label style="font-size:40px; font-family:verdana; font-style:italic; color: green">        Add wine to the cellar</label><br><br>
                     </p>
                     <p>
-                        <label>   Date purchased/stored</label>
-                            <input type="text" name="date_stored" placeholder="Mmm-YY" size="6" required>
+                        <label>Date purchased/stored</label>
+                        <input type="text" name="date_stored" id="date_stored" placeholder="Mmm-YY" size="6" value="Apr-20" required>
                     </p>
                     <p>
-                        <label>   Purchased from</label>
-                            <input type="text" name="purchased_from" size="40">
+                        <label>Purchased from</label>
+                        <input type="text" name="purchased_from" id="purchased_from" size="40">
                     </p>
                     <p>
-                        <label>   Purchase price(per bottle)</label>
-                            <input type="Text" name="price" placeholder="$$$$" size="4">                       
+                        <label>Purchase price(per bottle)</label>
+                        <input type="Text" name="price" id="price" placeholder="$$$$" size="4">
                     </p>
                     <p>
-                        <label>   Producer</label>
-                        <input type="text" name="producer" size="40" required>
+                        <label>Producer</label>
+                        <input type="text" name="producer" id="producer" size="40" value="REDMAN" required>
                     </p>
                     <p>
-                        <label>   Grape varieties</label>
-                        <label>  Grape #1</label>
-                        <input type="text" name="grape_1" size="10" required>
-                        <label>  Grape #2</label>
-                        <input type="text" name="grape_2" size="10">
-                        <label>  Grape #3</label>
-                        <input type="text" name="grape_3" size="10">
+                        <label>Grape varieties</label>
+                        <label>Grape #1</label>
+                        <input type="text" name="grape_1" id="grape_1" size="10" value="SHIRAZ" required><br>
+                    </p>
+                    <p style="margin-left: 179px">
+                        <label>Grape #2</label>
+                        <input type="text" name="grape_2" id="grape_2" size="10">
+                    </p>
+                    <p style="margin-left: 179px">
+                        <label>Grape #3</label>
+                        <input type="text" name="grape_3" id="grape_3" size="10">
+                    </p>
+                    <p style="margin-left: 179px">
                         <label>  Other grapes</label>
-                        <input type="text" name="other_grapes" size="20">
+                        <input type="text" name="other_grapes" id="other_grapes" size="20">
                     </p>
                     <p>
-                        <label>   Colour</label>                       
-                        <select>
-                            <option>Select one</option>
+                        <label>   Colour</label>
+                        <input type="text" name="colour" id="colour" size=5 list="colours" required>
+                        <datalist id="colours">
                             <option>Red</option>
                             <option>White</option>
-                        </select>
-                     
+                        </datalist>
+
                         <label>   Wine style</label>
-                        <select>
-                            <option>Select one</option>
+                        <input type="text" name="style" id="style" size="10" list="styles" required>
+                        <datalist id="styles">
                             <option>Still</option>
                             <option>Sparkling</option>
                             <option>Fortified</option>
-                        </select>                        
-                    
+                        </datalist>
+
                         <label>   Vintage</label>
-                        <input type="text" name="Vintage" placeholder="YYYY" size="4" required>
+                        <input type="text" name="vintage" id="vintage" placeholder="YYYY" size="4" value="2016" required>
                     </p>
                     <p>
                         <label>   Grape region</label>
-                        <input type="text" name="grape_region" size="30">
+                        <input type="text" name="grape_region" id="grape_region" size="30" value="COONAWARRA" required>
+                        <label> State</label>
+                        <input type="text" name="state" id="state" size="20" list="states">
+                        <datalist id="states">
+                            <option value="Australian Capital Territory">
+                            <option value="New South Wales">
+                            <option value="Northern Territory">
+                            <option value="Queensland">
+                            <option value="South Australia" selected>
+                            <option value="Western Australia">
+                            <option value="Tasmania">
+                            <option value="Victoria">
+                            <option value="Not applicable">
+                        </datalist>
+
                         <label>   Country</label>
-                        <input type="text" name="country" size="20">
+                        <input type="text" name="country" id="country" size="20" required>
                     </p>
                     <p>
                         <label>   Cellar up to</label>
-                        <input type="text" name="cellar_up_to" placeholder="YYYY" size="4">
-                    
+                        <input type="text" name="cellar_up_to" id="cellar_up_to" placeholder="YYYY" size="4">
+
                         <label>   Storage location</label>
-                        <Input type="text" name="storage_location" size="10" required>
+                        <input type="text" name="storage_location" id="storage_location" size="10" value=LA1 required>
                     </p>
                     <p>
-                        <label>   Comments</label>
-                        <input type="text" name="comments" placeholder="Insert comments here" size="100">
+                        <label>   Any Comments?</label>
+                        <input type="text" name="any_comments" id="any_comments" placeholder="Insert comments here" size="100">
                     </p>
-                    /*  include a label image field later
                     <p>
-                        <button type="button">Add wine</button>
-                        <button type="reset">Reset form</button>
-                        <button type="button" onclick="closeWindow()">Close</button>                
+                        /*  include a label image field later
+                    </p>
+                    <p>
+                        <button type="button" class="button" onclick="addToCellar()" value="Submit">Add this one to the cellar</button>
+                        <button type="reset" class="button">Reset form</button>
+                        <button type="button" class="button" onclick="closeWindow()">Close</button>
                     </p>
                 </form>
             </div>
         </h2> 
         <h3>
-            <button class="button" onclick="alert('I\'ve had a drink so I need to remove some wines from the cellar')">I have some wines to remove from the cellar</button>
+            <button class="button" onclick="alert('I\'ve had a drink so I need to remove some wines from the cellar')" style="font-size:40px; font-family:verdana">I have some wines to remove from the cellar</button>
         </h3>
         <h4>
-            <button class="button" onclick="alert('What\'s in my cellar?')">What's left to drink</button>    
+            <button class="button" onclick="alert('What\'s in my cellar?')" style="font-size:40px; font-family:verdana">What's left to drink</button>    
         </h4>       
     </body>
 </html> 
